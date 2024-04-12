@@ -1,6 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  background-color: red;
+@import 'base';
+
+
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+
+
+  @import 'hero';
+  @import 'grid';
+  @import 'testimonials';
+  @import 'gallery';
+  @import 'footer';
+  
+
 }
+
+
+
 

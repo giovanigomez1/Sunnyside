@@ -1,0 +1,123 @@
+&__grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(60rem, 1fr) );
+  grid-template-rows: repeat(1fr, 3);
+  & img {
+    width: 100%;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &--transf-img {
+    background-image: url('../images/desktop/image-transform.jpg');
+    background-size: cover;
+  }
+  &--audience-img {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+    background-size: cover;
+  }
+  &--graphic {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+  }
+  &--photo {
+    background-image: url('../images/desktop/image-photography.jpg');
+    background-size: cover;
+  }
+
+  &--transform, 
+  &--audience {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    & h3 {
+      font-size: 4rem;
+      font-family: "Fraunces", sans-serif;
+      & span {
+        display: block;
+      }
+    }
+    & p {
+      font-size: 1.6rem;
+      color: var(--grayish-blue);
+      line-height: 1.8;
+    }
+    & a {
+      text-transform: uppercase;
+      color: var(--very-dark-desaturated-blue);
+      font-size: 1.6rem;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 800;
+      text-decoration: none;
+      position: relative;
+      z-index: 10;
+    }
+    .content {
+      width: 74%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3rem;
+      &__link {
+        position: relative;
+        padding: 0 1rem;
+      }
+      &__link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1rem;
+        border-radius: 5px;
+        bottom: -1.6px;
+        left: 0;
+        z-index: 0;
+      }
+      
+    }
+  }
+  &--transform {
+    .content {
+      &__link::after {
+        background-color: hsla(51, 100%, 49%, 0.478);
+      }
+    }
+  }
+  &--audience {
+    .content {
+      &__link::after {
+        // background-color: hsla(0, 0%, 0%, 0.479);
+        background-color: hsla(7, 99%, 70%, 0.479);
+      }
+    }
+  }
+  &--graphic,
+  &--photo {
+    position: relative;
+    .content {
+      font-family: "Fraunces", sans-serif;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      width: 55%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      color: var(--dark-desaturated-cyan);
+      & h3 {
+        font-size: 2.8rem;
+      }
+      & p {
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.6;
+      }
+    }
+  }
+}

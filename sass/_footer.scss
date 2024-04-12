@@ -1,0 +1,70 @@
+&__footer {
+  background-color: var(--grayish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 3rem;
+  gap: 4rem;
+
+
+  &--logo {
+    & svg {
+      scale: 1.5;
+    }
+    & svg path {
+      fill: var(--dark-desaturated-cyan);
+    }
+  }
+
+  &--menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+    & li {
+      cursor: pointer;
+      & a:link,
+      & a:visited {
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--dark-moderate-cyan);
+      }
+      & a:hover {
+        color: var(--white);
+      }
+    }
+  }
+
+  &--contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    & img {
+      cursor: pointer;
+    }
+    & img:hover {
+      filter: brightness(0) invert(1);
+    }
+  }
+  &--attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    & p {
+      font-size: 1.2rem;
+      & a:link,
+      & a:visited {
+        text-decoration: none;
+        color: var(--dark-desaturated-cyan);
+      }
+    }
+  }
+  
+}
+
