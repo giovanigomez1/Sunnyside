@@ -26,8 +26,8 @@ html {
 
 
 // Responsive Breakpoints
-$bp-largest: 75em; // 1200px
-$bp-large:62.5em; // 1000px
+$bp-largest: 140em; // 2240px
+$bp-large:56.1em; // 899px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
 
@@ -39,4 +39,13 @@ body {
 
 .hidden {
   display: none;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }

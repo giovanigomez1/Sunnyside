@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  @media only screen and (max-width: $bp-medium){
+    padding: 5rem 3rem;
+  }
   &--title {
     font-family: "Fraunces", sans-serif;
     & h2 {
@@ -12,6 +15,10 @@
       color: var(--grayish-blue);
       text-transform: uppercase;
       letter-spacing: 4.8;
+      @media only screen and (max-width: $bp-medium){
+        font-size: 1.8rem;
+        text-align: center;
+      }
     }
   }
   &--content {
