@@ -1,7 +1,4 @@
 @import 'base';
-
-
-
 .container {
   max-width: 130rem;
   margin: 0 auto;
@@ -9,14 +6,11 @@
   @media only screen and (max-width: $bp-largest){
     box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.078);
   }
-
   @import 'hero';
   @import 'grid';
   @import 'testimonials';
   @import 'gallery';
   @import 'footer';
-  
-
 }
 
 

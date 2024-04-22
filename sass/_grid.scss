@@ -44,7 +44,6 @@
       background-image: url('../images/mobile/image-photography.jpg');
     }
   }
-
   &--transform, 
   &--audience {
     @media only screen and (max-width: $bp-medium){
@@ -115,7 +114,6 @@
         left: 0;
         z-index: 0;
       }
-      
     }
   }
   &--transform {
